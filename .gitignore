@@ -1,0 +1,59 @@
+# ============================================================
+# Amazon ML Challenge — .gitignore
+# ============================================================
+
+# ------ Dataset (large, ~2.35 GB) ---------------------------
+business-entity-matching/dataset/
+
+# ------ Generated outputs / submissions ---------------------
+# Root-level outputs
+outputs/
+output/
+
+# Package-level outputs (mmap indexes, model, submissions)
+business-entity-matching/code/business_entity_resolution/outputs/
+
+# Submission TSV files anywhere in the tree
+*.tsv
+*.partial.tsv
+
+# ------ Python cache & compiled files -----------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# ------ Virtual environments --------------------------------
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# ------ Jupyter notebooks (optional: remove if you want them) ---
+# *.ipynb
+
+# ------ IDE / editor artifacts ------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ------ OS artifacts ----------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ------ Logs & profiling ------------------------------------
+*.log
+*.prof
+
+# ------ Large binary / model artifacts ----------------------
+*.pkl
+*.bin
+*.npy
+*.npz
+
+# ------ Experiments / scratch directories -------------------
+business-entity-matching/experiments/
